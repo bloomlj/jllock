@@ -1,8 +1,12 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
-<ul>
-  <li>ID / rfid  / doorid   /  datetime   </li>
+<table>
+  <tr>
+    <th>ID</th> <th>rfid</th><th>doorid</th><th>datetime</th>
+  </tr>
 {{#items}}
-  <li>{{id}},{{rfid}},{{doorid}},{{datetime}} </li>
+  <tr>
+  <td>{{id}}</td> <td>{{rfid}}</td><td>{{doorid}}</td><td>{{attime}}</td>
+  </tr>
 {{/items}}
-</ul>
+</table>

@@ -8,10 +8,17 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+//database
+var mysql = require('mysql');
 
-//db init
-var sqlite3 = require('sqlite3').verbose();
-global.jliotdb = new sqlite3.Database('jliot.db');
+var app = express();
+
+global.jliotdbconfig = {
+  user     : 'user',
+  password : 'password',
+  host     : 'ip',
+  database : 'db'
+}
 
 
 var app = express();
