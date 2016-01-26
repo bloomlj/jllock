@@ -95,7 +95,7 @@ void loop() {
             
             int x;
             digitalWrite(DIR,HIGH); // Set Dir high
-            for(x = 0; x < 90; x++) // Loop 200 times 
+            for(x = 0; x < 50; x++) // Loop 200 times 
             { 
                 digitalWrite(SETP,HIGH); // Output high 
                 delayMicroseconds(500); // Wait 1/2 a ms 
@@ -106,7 +106,7 @@ void loop() {
             delay(3000); // pause one second
             
             digitalWrite(DIR,LOW); // Set Dir low
-            for(x = 0; x < 90; x++) // Loop 2000 times 
+            for(x = 0; x < 50; x++) // Loop 2000 times 
             { 
               digitalWrite(SETP,HIGH); // Output high 
               delayMicroseconds(500); // Wait 1/2 a ms 
