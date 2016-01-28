@@ -28,14 +28,15 @@
 #define ENABLE_STEPER 6
 #define SETP 5
 #define DIR 4
-
+#define LED 8
 
 MFRC522 mfrc522(SS_PIN, RST_PIN);   // Create MFRC522 instance
 char charreceive;
 
 
+
 void setup() {
-       pinMode(7, OUTPUT);
+       pinMode(LED, OUTPUT);
       pinMode(ENABLE_STEPER,OUTPUT); // Enable 
       pinMode(SETP,OUTPUT); // Step 
       pinMode(DIR,OUTPUT); // Dir 
@@ -86,10 +87,10 @@ void loop() {
         delay(2);  
         if(charreceive=='Y')
           {
-            digitalWrite(7, HIGH);   // turn the LED on (HIGH is the voltage level)
-            delay(1000);              // wait for a second
-            digitalWrite(7, LOW);    // turn the LED off by making the voltage LOW
-            delay(1000);              // wait for a second
+            digitalWrite(LED, HIGH);   // turn the LED on (HIGH is the voltage level)
+            delay(500);              // wait for a second
+            digitalWrite(LED, LOW);    // turn the LED off by making the voltage LOW
+            delay(500);              // wait for a second
 
             // open the door
             
