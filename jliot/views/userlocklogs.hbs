@@ -2,11 +2,11 @@
 <p>Welcome to {{title}}</p>
 <table>
   <tr>
-    <th>ID</th> <th>rfid</th><th>doorid</th><th>datetime</th>
+    <th>ID</th><th>name</th> <th>rfid</th><th>doorid</th><th>datetime</th>
   </tr>
 {{#items}}
   <tr>
-  <td>{{id}}</td> <td>{{rfid}}</td><td>{{doorid}}</td><td>{{attime}}</td>
+  <td>{{id}}</td>   <td>{{first_name}} {{last_name}}</td>  <td>{{rfid}}</td><td>{{doorid}}</td><td>{{attime}}</td>
   </tr>
 {{/items}}
 </table>
