@@ -14,10 +14,10 @@ var mysql = require('mysql');
 var app = express();
 
 global.jliotdbconfig = {
-  user     : 'user',
-  password : 'password',
-  host     : 'ip',
-  database : 'db'
+  user     : 'root',
+  password : 'ysyhl9t.sql',
+  host     : '10.201.10.13',
+  database : 'maker'
 }
 
 
